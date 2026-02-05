@@ -28,13 +28,13 @@ class Main_view(ft.View):
         Title=ft.Text('Average Calculator',
                     color='black',
                     font_family='Century Gothic',
-                    size=30,
+                    size=22,
                     weight=ft.FontWeight.W_500)
         
         Subtitle=ft.Text('(Results may not be entirely accurate)',
                     color='black',
                     font_family='Century Gothic',
-                    size=16,
+                    size=14,
                     weight=ft.FontWeight.W_200)
         
         return ft.Column(controls=[Title,Subtitle],
@@ -327,4 +327,5 @@ def main(page: ft.Page):
 
 
 ft.app(main,assets_dir='assets')
+
 
