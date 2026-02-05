@@ -155,6 +155,7 @@ class Main_view(ft.View):
                             size=20)
                     ),
                     bgcolor='#F5EBFD',
+                    width=350,
                     title_alignment=ft.ListTileTitleAlignment.CENTER
                 )                
             return Tilelist
@@ -328,6 +329,7 @@ def main(page: ft.Page):
 
 
 ft.app(main,assets_dir='assets')
+
 
 
 
