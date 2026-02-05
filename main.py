@@ -106,7 +106,7 @@ class Main_view(ft.View):
                         helper_text=cof,
                         suffix_text='/20',
                         label='Exam',
-                        width=100,
+                        width=150,
                         helper_style=ft.TextStyle(
                             color='black',
                             font_family='Century Gothic'),
@@ -155,7 +155,7 @@ class Main_view(ft.View):
                             size=20)
                     ),
                     bgcolor='#F5EBFD',
-                    width=350,
+                    width=450,
                     title_alignment=ft.ListTileTitleAlignment.CENTER
                 )                
             return Tilelist
@@ -329,6 +329,7 @@ def main(page: ft.Page):
 
 
 ft.app(main,assets_dir='assets')
+
 
 
 
