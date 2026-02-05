@@ -23,6 +23,8 @@ class Main_view(ft.View):
         self.height=height
         self.vertical_alignment=ft.MainAxisAlignment.CENTER
         self.horizontal_alignment=ft.CrossAxisAlignment.CENTER
+        self.scroll=ft.ScrollMode.AUTO
+
 
     def Title_heading(self):
         Title=ft.Text('Average Calculator',
@@ -153,7 +155,6 @@ class Main_view(ft.View):
                             size=20)
                     ),
                     bgcolor='#F5EBFD',
-                    width=600,
                     title_alignment=ft.ListTileTitleAlignment.CENTER
                 )                
             return Tilelist
@@ -327,5 +328,6 @@ def main(page: ft.Page):
 
 
 ft.app(main,assets_dir='assets')
+
 
 
