@@ -54,7 +54,7 @@ class Main_view(ft.View):
                         value=name,
                         font_family='Century Gothic',
                         color='black',
-                        size=18,
+                        size=12,
                         width=100),
                     title=ft.TextField(
                         border_color='transparent',
@@ -64,7 +64,7 @@ class Main_view(ft.View):
                         helper_text=cof,
                         suffix_text='/20',
                         label='Exam',
-                        width=200,
+                        width=100,
                         helper_style=ft.TextStyle(
                             color='black',
                             font_family='Century Gothic'),
@@ -94,7 +94,7 @@ class Main_view(ft.View):
                         value=name,
                         font_family='Century Gothic',
                         color='black',
-                        size=18,
+                        size=12,
                         width=100),
                     title=ft.TextField(
                         border_color='transparent',
@@ -104,7 +104,7 @@ class Main_view(ft.View):
                         helper_text=cof,
                         suffix_text='/20',
                         label='Exam',
-                        width=200,
+                        width=100,
                         helper_style=ft.TextStyle(
                             color='black',
                             font_family='Century Gothic'),
@@ -112,7 +112,7 @@ class Main_view(ft.View):
                         suffix_style=ft.TextStyle(
                             color='black',
                             font_family='Century Gothic',
-                            size=20),
+                            size=12),
                         
                         label_style=ft.TextStyle(
                             color='black',
@@ -132,7 +132,7 @@ class Main_view(ft.View):
                         height=80,
                         suffix_text='/20',
                         label='Test',
-                        width=200,
+                        width=100,
                         helper_style=ft.TextStyle(
                             color='black',
                             font_family='Century Gothic'),
@@ -224,8 +224,8 @@ class Main_view(ft.View):
 
         Main_cont=ft.Container(
             bgcolor='#F5EBFD',
-            width=self.width/1.5,
-            height=self.height/1.5,
+            width=self.width,
+            height=self.height,
             border_radius=20,
             alignment=ft.alignment.center,
             content=ft.Column(expand=True,
@@ -327,3 +327,4 @@ def main(page: ft.Page):
 
 
 ft.app(main,assets_dir='assets')
+
