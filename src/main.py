@@ -3,17 +3,14 @@ import flet as ft
 
 
 Data={
-    'Civilization':3,
-    'Linguistics':3,
-    'Literature':3,
-    'CWP':2,
-    'COP':2,
-    'Translation':2,
-    'RM':2,
-    'Didactics':1,
-    'ESP':1,
-    'Cog Psy':1,
-    'French':1
+    'RM':3,
+    'Literary Discourse':3,
+    'Civilization':2,
+    'MENA':2,
+    'PD':2,
+    'MAT':2,
+    'Open Source':2,
+    'Ethics':1
 }
 
 Results=[]
@@ -51,7 +48,7 @@ class Main_view(ft.View):
 
         def List_creation(name,cof):
 
-            if cof!=3:
+            if cof==1:
                 Tilelist=ft.ListTile(
                     leading=ft.Text(
                         value=name,
@@ -97,7 +94,8 @@ class Main_view(ft.View):
                         value=name,
                         font_family='Century Gothic',
                         color='black',
-                        size=18),
+                        size=18,
+                        width=100),
                     title=ft.TextField(
                         border_color='transparent',
                         border_radius=20,
@@ -200,12 +198,12 @@ class Main_view(ft.View):
                 for module in Results:
                     cof,exam,test=module
                     if cof==3:
-                        equation=(((exam+test)/2)*cof)
+                        equation = ((exam * 0.6 + test * 0.4) * cof)
                         Notes.append(equation)
                     else:
                         equation=(exam*cof)
                         Notes.append(equation) 
-                Average=round(((sum(Notes)/21)),2)
+                Average=round(((sum(Notes)/17)),2)
                 
                 self.Score_field.value=None
                 self.Score_field.value=Average
